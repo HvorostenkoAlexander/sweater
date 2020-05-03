@@ -79,9 +79,7 @@ class UserServiceTest {
     @Test
     public void activateUser() {
         User user = new User();
-
-        user.setActivationCode("bingo!");
-
+        user.setActivationCode("bingo!!");
         Mockito.doReturn(user)
                 .when(userRepo)
                 .findByActivationCode("activate");
